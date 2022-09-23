@@ -81,4 +81,13 @@ output "private_sg_group_name" {
   #value       = module.private_sg.this_security_group_name
   value       = module.private_sg.security_group_name
 }
+output "kms_key_id" {
+  description = "KMS key"
+  value       = local.kms_key_id
+}
+
+output "s3_bucket_name" {
+  description = "The name of the bucket flow logs are routing to"
+  value       = local.bucket
+}
 
