@@ -12,9 +12,9 @@ module "vpc" {
   #name = "${var.vpc_name}"
   cidr = var.vpc_cidr_block
   azs             = var.vpc_availability_zones
-  name = "Network-Prod-E1-Public-SNET"
+  #name = "Network-Prod-E1-Public-SNET"
   public_subnets  = var.vpc_public_subnets
-  name = "Network-Prod-E1-Private-SNET"
+  #name = "Network-Prod-E1-Private-SNET"
   private_subnets = var.vpc_private_subnets  
 
   # Database Subnets
